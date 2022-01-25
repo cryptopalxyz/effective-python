@@ -29,7 +29,7 @@ if __name__ == '__main__': # avoid concurrent.futures.process.BrokenProcessPool
     pool = ProcessPoolExecutor(max_workers=4)
     result = list(pool.map(gcd, numbers))
     end = time()
-    print('Took %.3f secondss' % (end - start)) # Took 4.748 secondss
+    print('Took %.3f secondss' % (end - start)) # Took 2.748 secondss
 
 
 
